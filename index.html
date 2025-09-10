@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mein Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .profile {
+      text-align: center;
+    }
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid #555;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #222;
+      color: white;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+<h1>Thomas Herent</h1>
+<p>Consultant | Projektmanagement</p>
+    <nav>
+      <a href="#about">Über mich</a>
+      <a href="#projects">Projekte</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <section id="about" class="profile">
+    <img src="profilbild.jpg" alt="Profilbild von Max Mustermann" />
+    <h2>Über mich</h2>
+    <p>Guten Tag! Mein Name ist Thomas Herent, ein leidenschaftlicher Wirtschaftsinformatiker mit bisherigem Fokus auf Consulting und Projektmanagement. Bla Bla Platzhalter</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projekte</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Projekt 1</h3>
+        <p>Kurzbeschreibung des Projekts.</p>
+        <a href="projekt1.html">Mehr erfahren →</a>
+      </div>
+      <div class="card">
+        <h3>Projekt 2</h3>
+        <p>Kurzbeschreibung des Projekts.</p>
+        <a href="projekt2.html">Mehr erfahren →</a>
+      </div>
+      <div class="card">
+        <h3>Projekt 3</h3>
+        <p>Kurzbeschreibung des Projekts.</p>
+        <a href="projekt3.html">Mehr erfahren →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p>Sie erreichen mich gerne unter <a href="mailto:thomas_herent@gmx.net">thomas_herent@gmx.net</a> erreichen.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Thomas Herent – Alle Rechte vorbehalten</p>
+  </footer>
+</body>
+</html>
