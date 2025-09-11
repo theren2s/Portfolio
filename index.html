@@ -24,6 +24,8 @@
     header p {
       font-size: 1.2rem;
     }
+
+    /* Mobile Nav sichtbar */
     nav {
       display: flex;
       justify-content: center;
@@ -35,6 +37,14 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    /* Desktop Nav ausblenden */
+    @media (min-width: 768px) {
+      nav {
+        display: none;
+      }
+    }
+
     section {
       max-width: 1200px;
       margin: 3rem auto;
@@ -59,17 +69,17 @@
     /* Grid Layout */
     .grid {
       display: grid;
-      grid-template-columns: 1fr; /* Standard = Handy */
+      grid-template-columns: 1fr; /* Handy = 1 Spalte */
       gap: 1.5rem;
     }
     @media (min-width: 768px) {
       .grid {
-        grid-template-columns: repeat(2, 1fr); /* Tablet = 2x2 */
+        grid-template-columns: repeat(2, 1fr); /* Tablet */
       }
     }
     @media (min-width: 1200px) {
       .grid {
-        grid-template-columns: repeat(4, 1fr); /* Desktop = 1x4 */
+        grid-template-columns: repeat(4, 1fr); /* Desktop */
       }
     }
 
@@ -81,9 +91,9 @@
       transition: transform 0.2s;
       text-align: center;
 
-      display: flex;               /* sorgt für gleiche Höhe */
-      flex-direction: column;      /* Inhalte von oben nach unten */
-      justify-content: space-between; /* Titel oben, Link unten */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .card:hover {
       transform: translateY(-5px);
@@ -94,6 +104,7 @@
       font-weight: bold;
       margin-top: 1rem;
     }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -107,6 +118,8 @@
   <header>
     <h1>Thomas Herent</h1>
     <p>Consultant | Projektmanagement</p>
+
+    <!-- Navigation nur Mobile -->
     <nav>
       <a href="#about">Über mich</a>
       <a href="#projects">Projekte</a>
