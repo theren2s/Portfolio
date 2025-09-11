@@ -1,154 +1,55 @@
+<!-- projekt1.html -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mein Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f9;
-      color: #333;
-    }
-    header {
-      background: #222;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      max-width: 1200px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-    h2 {
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-    .profile {
-      text-align: center;
-    }
-    .profile img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1rem;
-      border: 3px solid #555;
-    }
-
-    /* Grid Layout */
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr; /* Standard = Handy */
-      gap: 1.5rem;
-    }
-    @media (min-width: 768px) {
-      .grid {
-        grid-template-columns: repeat(2, 1fr); /* Tablet = 2x2 */
-      }
-    }
-    @media (min-width: 1200px) {
-      .grid {
-        grid-template-columns: repeat(4, 1fr); /* Desktop = 1x4 */
-      }
-    }
-
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-      text-align: center;
-
-      display: flex;               /* sorgt für gleiche Höhe */
-      flex-direction: column;      /* Inhalte von oben nach unten */
-      justify-content: space-between; /* Titel oben, Link unten */
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card a {
-      text-decoration: none;
-      color: #0077cc;
-      font-weight: bold;
-      margin-top: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #222;
-      color: white;
-      margin-top: 3rem;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projekt 1 – Thomas Herent</title>
+<style>
+body { font-family: Arial, sans-serif; margin:0; background:#f4f4f9; color:#333; line-height:1.6; }
+header { background:#222; color:#fff; text-align:center; padding:1.5rem; }
+nav a { color:#fff; text-decoration:none; font-weight:bold; }
+main { max-width:800px; margin:2rem auto; padding:0 1rem; }
+section { margin-bottom:2rem; }
+h2 { border-bottom:2px solid #ddd; padding-bottom:0.5rem; }
+footer { text-align:center; padding:2rem; background:#222; color:#fff; margin-top:3rem; }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Thomas Herent</h1>
-    <p>Consultant | Projektmanagement</p>
-    <nav>
-      <a href="#about">Über mich</a>
-      <a href="#projects">Projekte</a>
-      <a href="#contact">Kontakt</a>
-    </nav>
-  </header>
-
-  <section id="about" class="profile">
-    <img src="profilbild.jpg" alt="Profilbild von Thomas Herent" />
-    <h2>Über mich</h2>
-    <p>Guten Tag! Mein Name ist Thomas Herent, ein leidenschaftlicher Wirtschaftsinformatiker mit bisherigem Fokus auf Consulting und Projektmanagement. Bla Bla Platzhalter</p>
-  </section>
-
-  <section id="projects">
-    <h2>Projekte</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Einführung eines POS-Kassensystem</h3>
-        <a href="projekt1.html">Mehr erfahren →</a>
-      </div>
-      <div class="card">
-        <h3>Qualitätsmanagement Lenkungsentwicklung</h3>
-        <a href="projekt2.html">Mehr erfahren →</a>
-      </div>
-      <div class="card">
-        <h3>Projektleitung E-Learning Team</h3>
-        <a href="projekt3.html">Mehr erfahren →</a>
-      </div>
-      <div class="card">
-        <h3>Konzeptionierung / Projektleitung Support-Abteilung</h3>
-        <a href="projekt4.html">Mehr erfahren →</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Kontakt</h2>
-    <p>Sie erreichen mich gerne unter <a href="mailto:thomas_herent@gmx.net">thomas_herent@gmx.net</a>.</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Thomas Herent – Alle Rechte vorbehalten</p>
-  </footer>
+<header>
+<h1>Projekt 1</h1>
+<nav><a href="index.html">← Zurück zum Portfolio</a></nav>
+</header>
+<main>
+<section>
+<h2>Projektbezeichnung</h2>
+<p>Implementierung eines POS-Kassensystems in SEA LIFE Deutschland GmbH - Standort Königswinter</p>
+</section>
+<section>
+<h2>Kurzbeschreibung</h2>
+<p>Als Standort-Projektleitung galt es, bei der Konfiguration eines neuen POS-Kassensystem mitzuwirken und dieses am Standort einzuführen. Projektpartner: Accesso Technology Group.</p>
+</section>
+<section>
+<h2>Zielsetzung</h2>
+<p>Requirements für den entsprechenden Standort abbilden, sowie Mitarbeitende im Umgang mit dem neuen System schulen.</p>
+</section>
+<section>
+<h2>Meine Rolle</h2>
+<ul>
+<li><strong>Aufgaben:</strong> Requirements-management, Hard-/Softwareeinrichtung, Dokumentation, Verhandlung mit Betriebsrat, Erstellung von Userguides, Durchführen von Trainings, Fortschrittspräsentation.</li>
+<li><strong>Verantwortungsbereich:</strong> Gesamtverantwortlichkeit für den Standort Königswinter.</li>
+<li><strong>Zusammenarbeit:</strong> Mitarbeitende aus der Merlin Entertainment Group / Projektpartner Accesso Technology Group</li>
+<li><strong>Tools & Methoden:</strong> MS Office, MS Teams, Projektmanagement nach PMI</li>
+</ul>
+</section>
+<section>
+<h2>Ergebnisse</h2>
+<p>Erfolgreiche Anpassung und Einführung des Kassensystems, sowie Schulung der Nutzergruppe.</p>
+</section>
+</main>
+<footer>
+<p>&copy; 2025 Thomas Herent</p>
+</footer>
 </body>
 </html>
+
